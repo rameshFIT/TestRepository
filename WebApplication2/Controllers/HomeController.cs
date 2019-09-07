@@ -6,5 +6,14 @@ using System.Web.Mvc;
 
 namespace WebApplication2.Controllers
 {
-    //This is what i whant
+    public class HomeController : Controller
+    {
+        
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+    }
 }
